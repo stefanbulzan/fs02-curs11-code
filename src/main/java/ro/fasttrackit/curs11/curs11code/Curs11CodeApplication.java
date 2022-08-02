@@ -3,6 +3,7 @@ package ro.fasttrackit.curs11.curs11code;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import ro.fasttrackit.curs11.curs11code.model.entity.LocationEntity;
 import ro.fasttrackit.curs11.curs11code.model.entity.TrainEntity;
 import ro.fasttrackit.curs11.curs11code.model.security.MyUser;
@@ -14,6 +15,7 @@ import java.util.List;
 import java.util.UUID;
 
 @SpringBootApplication
+@EnableWebSecurity(debug = true)
 public class Curs11CodeApplication {
 
     public static void main(String[] args) {

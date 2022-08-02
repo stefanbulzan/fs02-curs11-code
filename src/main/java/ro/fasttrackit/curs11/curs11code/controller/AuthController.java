@@ -16,4 +16,24 @@ public class AuthController {
     SecurityContext me() {
         return SecurityContextHolder.getContext();
     }
+
+    @GetMapping("onlyAdmin")
+    SecurityContext onlyAdmin() {
+        return SecurityContextHolder.getContext();
+    }
+
+    @GetMapping("onlyRead")
+    SecurityContext onlyRead(){
+        return SecurityContextHolder.getContext();
+    }
+
+    @GetMapping("onlyManage")
+    SecurityContext onlyManage(){
+        return SecurityContextHolder.getContext();
+    }
+
+    @GetMapping("readOrWriteNotAdmin")
+    SecurityContext readOrWriteNotAdmin(){
+        return SecurityContextHolder.getContext();
+    }
 }
